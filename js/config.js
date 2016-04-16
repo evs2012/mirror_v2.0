@@ -67,10 +67,14 @@ var config = {
     },
     news: {
         feed: [
-			'http://feeds.reuters.com/reuters/healthNews',
-			'http://feeds.reuters.com/reuters/oddlyEnoughNews',
-			'http://feeds.reuters.com/Reuters/domesticNews',
-			'http://feeds.reuters.com/Reuters/worldNews'
+			'http://feeds.arstechnica.com/arstechnica/technology-lab',
+			'http://feeds.arstechnica.com/arstechnica/gaming',
+			'http://feeds.arstechnica.com/arstechnica/multiverse',
+			'http://feeds.arstechnica.com/arstechnica/cars'
+			//'http://feeds.reuters.com/reuters/healthNews',
+			//'http://feeds.reuters.com/reuters/oddlyEnoughNews',
+			//'http://feeds.reuters.com/Reuters/domesticNews',
+			//'http://feeds.reuters.com/Reuters/worldNews'
 		]
     },
 	traffic: {
