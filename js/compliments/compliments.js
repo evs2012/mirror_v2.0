@@ -6,7 +6,8 @@ var compliments = {
 		'christmas': config.compliments.christmas,
 		'morning': config.compliments.morning,
 		'afternoon': config.compliments.afternoon,
-		'evening': config.compliments.evening
+		'evening': config.compliments.evening,
+		'bedtime': config.compliments.bedtime
 	},
 	updateInterval: config.compliments.interval || 30000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
@@ -46,11 +47,11 @@ compliments.updateCompliment = function () {
 	} else if (hour >= 9 && hour < 16) {
 		// Afternoon compliments
 		_list = compliments.complimentList['afternoon'].slice();
-	} else if (hour >= 16 || hour < 22) {
+	} else if (hour >= 16 && hour < 22) {
 		// Evening compliments
 		_list = compliments.complimentList['evening'].slice();
 	} else if (hour >= 22 || hour < 3) {
-		// Evening compliments
+		// bedtime compliments
 		_list = compliments.complimentList['bedtime'].slice();
 	} else {
 		// Edge case in case something weird happens

@@ -2,17 +2,18 @@
 
 var keys = {
     weather: {
-		apiKey: '198efbc855feca8db72a20fdad42562d',
+		apiKey: '3f86aafb339ec710d88e1e4ca1f23311',
 		//Go to https://developer.forecast.io/ to register and get your free API key
 		address: '1025 45th Street Norfolk, Virginia 23508'
     },
 	traffic: {
 		params: {
+			// 1600 granby to ccm house
 			origin: 'place_id:ChIJIbdaqLSZuokRxYOU0w5Qas8',
-			destination: 'place_id:ChIJAagsk6HquokRo2zA1RoWy6g',
+			destination: 'place_id:ChIJod3egq2ZuokRr2RD8du_kY4',
             // Use the PlaceID Finder: https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
 			departure_time: 'now',
-			key: 'AIzaSyAXe6ox2MpHr2CLU5bhnxJ9KOV_oGkz_qg'
+			key: 'AIzaSyBGTStY8NX5Px9nyqy8RXfuR-U8cQBYpbs'
             // Go here to get your Google Maps API key: https://developers.google.com/maps/documentation/directions/
 		}
 	},
@@ -46,6 +47,10 @@ var keys = {
 			day: 16,
 			month: 3,
 			name: 'Robert'
+		},{
+			day: 11,
+			month: 5,
+			name: "Joe & Sean"
 		}
 	]
 }
