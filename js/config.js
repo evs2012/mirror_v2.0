@@ -51,6 +51,7 @@ var config = {
         ],
         evening: [
 		'You have great taste in mirrors!',
+		"Radically Reflective!",
 		'Your face makes other people look ugly!',
 		'Your hair looks stunning!',
 		"At least you didn't lose your keys today, right?",
@@ -71,6 +72,8 @@ var config = {
 		"I could just hang here all day!",
 		"I'm not touch screen.",
 		"There is always a party with you here.",
+		"I need some time to reflect...",
+		"I see a lot of my self in you.",
 		"I'm a mirror and I'm LIT!"
         ],
 	bedtime: [

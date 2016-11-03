@@ -29,8 +29,9 @@ var keys = {
 				// For Google Calendar, it's the 'Private Address' under Calendar Settings when viewing your Calendar
 			},
 			{
-				symbol: 'calendar-check-o',
-				url: 'CALENDAR.ics ADDRESS'
+				symbol: 'paper-plane',
+				url: 'https://calendar.google.com/calendar/ical/5j0qaqqeicaibojtn388oq8anc%40group.calendar.google.com/private-175178c07d6d9a373592e4122b1479b3/basic.ics'
+				//testing the calendar symbols
 			}
 		]
 	},
