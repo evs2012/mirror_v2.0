@@ -37,7 +37,7 @@ compliments.updateCompliment = function () {
 	}
 
 	// BirthdayBit swaps every run thorugh so that every other compliment is a just a normal compliment
-	if (birthdayToday && BirthdayBit) {
+	if (birthdayToday && compliments.BirthdayBit) {
 		// Birthday compliments
 		_list = compliments.complimentList['birthday'].slice();
 	} else if (dateDay == 25 && dateMonth == 12) {
@@ -73,7 +73,7 @@ compliments.updateCompliment = function () {
 	var _randomIndex = Math.floor(Math.random() * _list.length);
 	
 	// BirthdayBit swaps every run thorugh so that every other compliment is a just a normal compliment
-	if(birthdayToday && BirthdayBit){
+	if(birthdayToday && compliments.BirthdayBit){
 		compliments.currentCompliment = _list[_randomIndex] + birthdayName + '!';
 	} else{
 		compliments.currentCompliment = _list[_randomIndex];
