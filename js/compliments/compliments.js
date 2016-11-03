@@ -12,7 +12,8 @@ var compliments = {
 	updateInterval: config.compliments.interval || 30000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
 	intervalId: null,
-	birthdayList: keys.birthdays
+	birthdayList: keys.birthdays,
+	BirthdayBit: false
 };
 
 /**
@@ -35,7 +36,8 @@ compliments.updateCompliment = function () {
 		}
 	}
 
-	if (birthdayToday) {
+	// BirthdayBit swaps every run thorugh so that every other compliment is a just a normal compliment
+	if (birthdayToday && BirthdayBit) {
 		// Birthday compliments
 		_list = compliments.complimentList['birthday'].slice();
 	} else if (dateDay == 25 && dateMonth == 12) {
@@ -70,12 +72,15 @@ compliments.updateCompliment = function () {
 	// Randomly select a location
 	var _randomIndex = Math.floor(Math.random() * _list.length);
 	
-	if(birthdayToday){
+	// BirthdayBit swaps every run thorugh so that every other compliment is a just a normal compliment
+	if(birthdayToday && BirthdayBit){
 		compliments.currentCompliment = _list[_randomIndex] + birthdayName + '!';
 	} else{
 		compliments.currentCompliment = _list[_randomIndex];
 	}	
 	
+	BirthdayBit = !BirthdayBit;
+
 	$(this.complimentLocation).updateWithText(compliments.currentCompliment, compliments.fadeInterval);
 
 };
