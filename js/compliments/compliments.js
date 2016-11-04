@@ -13,8 +13,9 @@ var compliments = {
 	fadeInterval: config.compliments.fadeInterval || 4000,
 	intervalId: null,
 	birthdayList: keys.birthdays,
-	BirthdayBit: false
 };
+
+var BirthdayBit = false;
 
 /**
  * Changes the compliment visible on the screen
@@ -79,7 +80,7 @@ compliments.updateCompliment = function () {
 		compliments.currentCompliment = _list[_randomIndex];
 	}	
 	
-	BirthdayBit = !BirthdayBit;
+	compliments.BirthdayBit = !compliments.BirthdayBit;
 
 	$(this.complimentLocation).updateWithText(compliments.currentCompliment, compliments.fadeInterval);
 
