@@ -52,9 +52,6 @@ var keys = {
 			day: 11,
 			month: 5,
 			name: "Joe & Sean"
-		},{
-			day: 4,
-			month: 11,
-			name: "Test Birthday"
+		}
 	]
 }
