@@ -16,13 +16,15 @@ var config = {
 		"Go out and live that #hashtag life today",
 		'Hello good looking!',
 		'I like your face!',
-		//'This is the day the Lord has made. Let us Rejoice and be GLAD in it!',
 		'I dig your look!',
+		"Don't put off until tomorrow what you can accomplish today",
 		'You light up the room!',
 		"DON'T DRINK THE COFFEE!!! I'm from the future... it's POISON!",
 		'Morning Sunshine',
 		'Take on the day you beautiful land mermaid you!',
-		"I hope your day is as nice as your face!"
+		"I hope your day is as nice as your face!",
+		"Today is going to be a great day!",
+		"This is the day the Lord hath made, let us be glad and rejoice in it."
         ],
         afternoon: [
 		'You look nice!',
@@ -39,7 +41,6 @@ var config = {
 		"Back so soon? Don't you have something to do?",
 		"You're sweeter than High Fructose Corn Syrup!",
 		'Nice job on that thing you did that time!',
-		//"USE THE FORCE!!! ALWAYS THE FORCE!!",
 		'That color is perfect on you!',
 		'Is that a potato?',
 		'Show me your moves!',
@@ -56,7 +57,6 @@ var config = {
 		'Your hair looks stunning!',
 		"At least you didn't lose your keys today, right?",
 		'You could survive a Zombie apocalypse. Maybe.',
-		//'Have you though about quitting your day job? No? .... good.',
 		'Dogs love you! Some of them. Some dogs are dumb though, so...',
 		'The Force is strong with you',
 		"If I could high five you... I would, I promise.",
@@ -71,10 +71,15 @@ var config = {
 		"You and Chuck Norris are on equal levels.",
 		"I could just hang here all day!",
 		"I'm not touch screen.",
+		"Hard work pays off in the future -- Procrastination pays off now.",
+		"How many times did you 'Ummm' today?"
+		"Hmmm... interesting",
+		"This too shall pass.",
 		"There is always a party with you here.",
 		"I need some time to reflect...",
 		"I see a lot of my self in you.",
-		"I'm a mirror and I'm LIT!"
+		"I'm a mirror and I'm LIT!",
+		"Good enough is the enemy of excellence!"
         ],
 	bedtime: [
 		'Sweet dreams!',
