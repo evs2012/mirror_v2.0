@@ -23,8 +23,8 @@ var config = {
 		'Morning Sunshine',
 		'Take on the day you beautiful land mermaid you!',
 		"I hope your day is as nice as your face!",
-		"Today is going to be a great day!",
-		"This is the day the Lord hath made, let us be glad and rejoice in it."
+		"Today is going to be a great day!"
+		//"This is the day the Lord hath made, let us be glad and rejoice in it."
         ],
         afternoon: [
 		'You look nice!',
@@ -72,8 +72,8 @@ var config = {
 		"I could just hang here all day!",
 		"I'm not touch screen.",
 		"Hard work pays off in the future -- Procrastination pays off now.",
-		"How many times did you 'Ummm' today?"
-		"Hmmm... interesting",
+		"How many times did you 'Ummm' today?",
+		"Hmmm... interesting.",
 		"This too shall pass.",
 		"There is always a party with you here.",
 		"I need some time to reflect...",
