@@ -47,7 +47,7 @@ var config = {
 		//'Is that a potato?',
 		'Show me your moves!',
 		"Are you my twin?",
-		"OBJECTS IN MIRROR ARE CLOSER THAN THEY APPEAR",
+		"objects in mirror are closer than they appear.",
 		'Ohhhh emmm geee... we look sooooo alike!',
 		"Have you been working out?",
 		"I'm lucky to be your mirror!",
