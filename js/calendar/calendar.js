@@ -273,6 +273,19 @@ calendar.fillTable = function(eventList,table){
 	for (var i in eventList) {
 		var e = eventList[i];
 
+		// TODO: Make this smart, pull from the calendar and search the description for text matches
+		/*
+			if no text match then use default fontAwesome symbol: http://fontawesome.io/cheatsheet/
+			Potential list
+			Graduation, Grad 			fa-graduation-cap [&#xf19d;]
+			Christmas					fa-tree [&#xf1bb;]
+			Party, Gathering, Drinks	fa-glass [&#xf000;]
+			trip, travel, vacation		fa-paper-plane [&#xf1d8;]
+			Wedding, Married			fa-diamond [&#xf219;]
+			Winter						fa-snowflake-o [&#xf2dc;]
+			
+		*/
+
 		var row = $('<tr/>').css('opacity', opacity);
 		if (calendar.displaySymbol) {
 			row.append($('<td/>').addClass('fa').addClass('fa-'+e.symbol).addClass('calendar-icon'));

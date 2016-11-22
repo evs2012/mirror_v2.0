@@ -47,7 +47,7 @@ var config = {
 		//'Is that a potato?',
 		'Show me your moves!',
 		"Are you my twin?",
-		"objects in mirror are closer than they appear.",
+		"Objects in mirror are closer than they appear.",
 		'Ohhhh emmm geee... we look sooooo alike!',
 		"Have you been working out?",
 		"I'm lucky to be your mirror!",
@@ -56,6 +56,7 @@ var config = {
 		"Oh, it's you..."
         ],
         evening: [
+        '<i class="fa-5x fa-wifi"></i>',
         "Don't touch me!",
 		'You have great taste in mirrors!',
 		"Radically Reflective!",
@@ -90,6 +91,7 @@ var config = {
 		"Ceci n'est pas une mirror."
         ],
 	bedtime: [
+		'<i class="fa-3x fa-battery-quarter"></i><br>Low Battery',
 		'Sweet dreams!',
 		"A day without sunshine is like, you know, night.",
 		'Good Night.',
