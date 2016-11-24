@@ -282,13 +282,28 @@ calendar.fillTable = function(eventList,table){
 			Party, Gathering, Drinks	fa-glass [&#xf000;]
 			trip, travel, vacation		fa-paper-plane [&#xf1d8;]
 			Wedding, Married			fa-diamond [&#xf219;]
-			Winter						fa-snowflake-o [&#xf2dc;]
-			
+			Winter						fa-snowflake-o [&#xf2dc;]			
 		*/
 
 		var row = $('<tr/>').css('opacity', opacity);
 		if (calendar.displaySymbol) {
-			row.append($('<td/>').addClass('fa').addClass('fa-'+e.symbol).addClass('calendar-icon'));
+			// See if any of the "smart" keywords allow for an automatic symbol
+			if(e.description.toUpperCase().includes("GRADUATION") || e.description.toUpperCase().includes("GRAD")) {
+				row.append($('<td/>').addClass('fa').addClass('fa-graduation-cap').addClass('calendar-icon'));
+			} else if(e.description.toUpperCase().includes("CHRISTMAS")) {
+				row.append($('<td/>').addClass('fa').addClass('fa-tree').addClass('calendar-icon'));
+			} else if(e.description.toUpperCase().includes("PARTY") || e.description.toUpperCase().includes("GATHERING") || e.description.toUpperCase().includes("DRINKS")) {
+				row.append($('<td/>').addClass('fa').addClass('fa-glass').addClass('calendar-icon'));
+			} else if(e.description.toUpperCase().includes("TRIP") || e.description.toUpperCase().includes("TRAVEL") || e.description.toUpperCase().includes("TRIP")) {
+				row.append($('<td/>').addClass('fa').addClass('fa-paper-plane').addClass('calendar-icon'));
+			} else if(e.description.toUpperCase().includes("WEDDING") || e.description.toUpperCase().includes("MARRIED")) {
+				row.append($('<td/>').addClass('fa').addClass('fa-diamond').addClass('calendar-icon'));
+			} else if(e.description.toUpperCase().includes("WINTER")) {
+				row.append($('<td/>').addClass('fa').addClass('fa-snowflake-o').addClass('calendar-icon'));
+			} else {
+				// use calendar's default symbol
+				row.append($('<td/>').addClass('fa').addClass('fa-'+e.symbol).addClass('calendar-icon'));
+			}
 		}
 
 		if(e.description.length>this.eventTitleMaxLength){
