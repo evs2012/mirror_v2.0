@@ -284,12 +284,12 @@ calendar.fillTable = function(eventList,table){
 			Wedding, Married			fa-diamond [&#xf219;]
 			Winter						fa-snowflake-o [&#xf2dc;]
 		*/
+		var descriptionUC = e.description.toUpperCase();
 
 		var row = $('<tr/>').css('opacity', opacity);
 		if (calendar.displaySymbol) {
 			// See if any of the "smart" keywords allow for an automatic symbol
-			var descriptionUC = e.description.toUpperCase();
-			if(descriptionUC.includes("GRADUATION") ||descriptionUC.includes("GRAD")) {
+			if(descriptionUC.includes("GRADUATION") || descriptionUC.includes("GRAD")) {
 				row.append($('<td/>').addClass('fa').addClass('fa-graduation-cap').addClass('calendar-icon'));
 			} else if(descriptionUC.includes("CHRISTMAS")) {
 				row.append($('<td/>').addClass('fa').addClass('fa-tree').addClass('calendar-icon'));
