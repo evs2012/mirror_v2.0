@@ -289,7 +289,7 @@ calendar.fillTable = function(eventList,table){
 		var row = $('<tr/>').css('opacity', opacity);
 		if (calendar.displaySymbol) {
 			// See if any of the "smart" keywords allow for an automatic symbol
-			if(descriptionUC.includes("GRADUATION") || descriptionUC.includes("GRAD")) {
+			/*if(descriptionUC.includes("GRADUATION") || descriptionUC.includes("GRAD")) {
 				row.append($('<td/>').addClass('fa').addClass('fa-graduation-cap').addClass('calendar-icon'));
 			} else if(descriptionUC.includes("CHRISTMAS")) {
 				row.append($('<td/>').addClass('fa').addClass('fa-tree').addClass('calendar-icon'));
@@ -301,10 +301,11 @@ calendar.fillTable = function(eventList,table){
 				row.append($('<td/>').addClass('fa').addClass('fa-diamond').addClass('calendar-icon'));
 			} else if(descriptionUC.includes("WINTER")) {
 				row.append($('<td/>').addClass('fa').addClass('fa-snowflake-o').addClass('calendar-icon'));
-			} else {
+			} else { 
 				// use calendar's default symbol
 				row.append($('<td/>').addClass('fa').addClass('fa-'+e.symbol).addClass('calendar-icon'));
-			}
+			}*/
+			row.append($('<td/>').addClass('fa').addClass('fa-'+e.symbol).addClass('calendar-icon'));
 		}
 
 		if(e.description.length>this.eventTitleMaxLength){
