@@ -87,7 +87,7 @@ var config = {
 		"I see a lot of my self in you.",
 		"I'm a mirror and I'm LIT!",
 		"Good enough is the enemy of excellence!",
-		"success is where preparation meets opportunity.",
+		"Success is where preparation meets opportunity.",
 		"Ceci n'est pas une mirror."
         ],
 	bedtime: [
